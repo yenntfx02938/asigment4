@@ -1,0 +1,238 @@
+*
+{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.banner{
+    height: 200px;
+    background-size: 100% 100%;
+    background-image: url(image/banner.png);
+    background-repeat: no-repeat;
+
+}
+.navbar{
+    background-color: cadetblue;
+    display: flex;
+    justify-content: flex-end;
+
+}
+
+.navbar a{
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 14px 28px;
+}
+
+.navbar a:hover{
+    background-color: white;
+    color: black;
+}
+
+#toggle{
+    display: none;
+}
+
+.togglearea{
+    background-color: cadetblue;
+    border-bottom: 2px solid white;
+    color:cadetblue;
+    padding: 10px;
+    display: flex;
+    justify-content: flex-end;
+}
+.togglearea label{
+    background-color:cadetblue;
+    height: 45px;
+    width: 45px;
+    color: black;
+    border-radius: 6px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.togglearea label span{
+    background-color: black;
+    height: 4px;
+    width: 80%;
+    margin: 1px;
+
+}
+.togglearea{
+    display: none;
+}
+.active{
+    background-color: #cccccc;
+}
+
+.content{
+    max-width: 70%;
+    margin: 0 auto;
+    background-color: burlywood;
+}
+
+.tieude{
+    font-size: 30px;
+    margin-left: 25px;
+    display: inline-block;
+    margin-top: 20px;
+    color: white;
+}
+
+.diadiem{
+    font-size: 26px;
+    margin-left: 25px;
+    font-weight: bold;
+    /*display: inline-block;*/
+}
+
+.link{
+    text-decoration: none;
+    color: black;
+}
+/*.content img{
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+}*/
+.anh img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+    height: auto;
+}
+.content p{
+    font-size: 20px;
+    margin-left: 10px;
+    text-indent: 10px;
+}
+/*css footer*/
+.footer{
+    width: 100%;
+    height: 100px;
+    background-color: teal;
+}
+.fa {
+    padding: 15px;
+    font-size: 10px;
+    width: 10px;
+    text-align: center;
+    text-decoration: none;
+    margin-left: 50%;
+    /*display: inline-block;*/
+    border-radius: 100%;
+
+}
+
+.fa:hover{
+    opacity: 0.7;
+}
+
+.fa-facebook{
+    background-color: #3B5998;
+    color: white;
+}
+.footer-p{
+    text-align: center;
+    color: white;
+
+}
+
+/*css trang chu*/
+.td-tc{
+    font-size: 30px;
+    color: cornflowerblue;
+    padding-top: 20px;
+    text-indent: 40px;
+    text-align: left;
+}
+
+.vb-tc{
+    text-align: left;
+    text-indent: 20px;
+    font-size: 20px;
+    margin:10px 10px;
+}
+.image{
+    width: 80%;
+    height: auto;
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/*css trang con*/
+.hit{
+    font-size: 30px;
+    padding-left: 20px;
+}
+/*css trang dien dan*/
+.diendan{
+    width: 100%;
+    height: 400px;
+    padding-top: 20px;
+    text-align: center;
+    color: white;
+}
+.backhome a{
+    text-decoration: none;
+    line-height: 30px;
+    font-size: 20px;
+    color: blue;
+}
+
+/*css lien he*/
+.containerlh {
+    width: 60%;
+    margin: auto;
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+    input[type=text] {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+ 
+input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+ 
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+@media screen and (max-width: 767px){
+    .banner{
+        display: none;
+    }
+    .navbar{
+        flex-direction: column;
+        display: none;
+    }
+    #toggle:checked+ .navbar{
+        display: flex;
+
+    }
+    .togglearea{
+        display: flex;
+    }
+
+}
